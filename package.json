@@ -1,0 +1,33 @@
+{
+    "type": "module",
+    "name": "pdfconvertercli",
+    "version": "1.0.0",
+    "description": "convert word to pdf and etc.",
+    "main": "cli.js",
+    "bin": {
+        "convert": "cli.js"
+    },
+    "scripts": {
+        "format": "prettier --write ."
+    },
+    "keywords": [
+        "cli",
+        "wordToPdf"
+    ],
+    "author": "nazarzadeR",
+    "license": "ISC",
+    "dependencies": {
+        "cli-color": "^2.0.3",
+        "cli-handle-unhandled": "^1.1.1",
+        "cli-meow-help": "^3.1.0",
+        "cli-welcome": "^2.2.2",
+        "docx-pdf": "^0.0.1",
+        "figlet": "^1.5.2",
+        "inquirer": "^9.1.4",
+        "meow": "^11.0.0",
+        "nanospinner": "^1.1.0"
+    },
+    "devDependencies": {
+        "prettier": "^2.8.4"
+    }
+}
