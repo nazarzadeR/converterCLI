@@ -33,6 +33,19 @@ const helpText = meowHelper({
     name: "converter",
     flags,
     commands,
+    examples: [
+        {
+            command: `word somePath/filename.docx(doc)`,
+        },
+        {
+            command: `word somePath/filename.docx(doc)`,
+            flags: ["extension pdf"],
+        },
+        {
+            command: `word`,
+            flags: ["input somePath/filename.docx(doc)", "extension pdf"],
+        },
+    ],
 });
 
 export default meow(helpText, { flags, importMeta: import.meta });

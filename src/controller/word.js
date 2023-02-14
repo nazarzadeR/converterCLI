@@ -8,7 +8,8 @@ export default async function word(cli) {
     let extension = { extension: flags.extension };
     const mainFilePath = input[1] || flags.input;
 
-    if (!!!mainFilePath) showErr("Enter word file to convert");
+    if (!!!mainFilePath)
+        return showErr("Enter word file to convert");
 
     if (!!!extension.extension) {
         extension = await inquirer.prompt({
